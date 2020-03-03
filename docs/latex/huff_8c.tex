@@ -1,0 +1,768 @@
+\hypertarget{huff_8c}{}\doxysection{huff.\+c File Reference}
+\label{huff_8c}\index{huff.c@{huff.c}}
+{\ttfamily \#include \char`\"{}huff.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}\label{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}} 
+unsigned \mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}} (\mbox{\hyperlink{structC}{Cell}} $\ast$macell)
+\begin{DoxyCompactList}\small\item\em test si macell est une feuille \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_a028c2d6b83a0d360ab81445934d8936d}\label{huff_8c_a028c2d6b83a0d360ab81445934d8936d}} 
+unsigned int \mbox{\hyperlink{huff_8c_a028c2d6b83a0d360ab81445934d8936d}{is\+\_\+emptyL}} (\mbox{\hyperlink{structL}{Liste}} const $\ast$liste)
+\begin{DoxyCompactList}\small\item\em si liste == listevide alors return 1 else 0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_aaaae44391ab8a00c45d9e6eeb8233893}\label{huff_8c_aaaae44391ab8a00c45d9e6eeb8233893}} 
+void \mbox{\hyperlink{huff_8c_aaaae44391ab8a00c45d9e6eeb8233893}{tri\+\_\+insertion}} (\mbox{\hyperlink{structL}{Liste}} $\ast$maliste)
+\begin{DoxyCompactList}\small\item\em Implementation de Insertion\+Sort algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_aa369ed420c1e8c9ce6c2361f26523230}\label{huff_8c_aa369ed420c1e8c9ce6c2361f26523230}} 
+void {\bfseries location\+\_\+append2} (\mbox{\hyperlink{structC}{Cell}} $\ast$cell\+\_\+loca, \mbox{\hyperlink{structC}{Cell}} $\ast$cell\+\_\+a, \mbox{\hyperlink{structL}{Liste}} $\ast$maliste)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}{open\+\_\+fichier}} (const char $\ast$n\+\_\+fichier, const char $\ast$param)
+\begin{DoxyCompactList}\small\item\em open le file avec minimum securite \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_a14699502c1b1906b163bcbfe697ad60b}\label{huff_8c_a14699502c1b1906b163bcbfe697ad60b}} 
+\mbox{\hyperlink{structB}{Binaire}} $\ast$ \mbox{\hyperlink{huff_8c_a14699502c1b1906b163bcbfe697ad60b}{crea\+Binaire}} ()
+\begin{DoxyCompactList}\small\item\em Create Binaire structure initialisé par défaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_ab9e0cad8290bf32b14f996352f0d3d99}\label{huff_8c_ab9e0cad8290bf32b14f996352f0d3d99}} 
+\mbox{\hyperlink{structL}{Liste}} $\ast$ \mbox{\hyperlink{huff_8c_ab9e0cad8290bf32b14f996352f0d3d99}{crea\+Liste}} ()
+\begin{DoxyCompactList}\small\item\em Creer une liste vide , creation par défaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_aeb9dea985cafab1c24fa128503e56c8b}\label{huff_8c_aeb9dea985cafab1c24fa128503e56c8b}} 
+\mbox{\hyperlink{structC}{Cell}} $\ast$ \mbox{\hyperlink{huff_8c_aeb9dea985cafab1c24fa128503e56c8b}{crea\+Cell}} (const size\+\_\+t oc, const unsigned int c)
+\begin{DoxyCompactList}\small\item\em on cree une nouvelle cell avec oc et c \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structC}{Cell}} $\ast$ \mbox{\hyperlink{huff_8c_ab3fd6fa4249433bd8ff5ab741b8dcd24}{crea\+Node}} (\mbox{\hyperlink{structC}{Cell}} $\ast$min1, \mbox{\hyperlink{structC}{Cell}} $\ast$min2)
+\begin{DoxyCompactList}\small\item\em creer un noeud avec les 2 fils connu et on actualise son nombre de feuille \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huff_8c_a48ec7d4cc3b2b07b57e7b0e5093600e6}{default\+\_\+append}} (\mbox{\hyperlink{structC}{Cell}} $\ast$c, \mbox{\hyperlink{structL}{Liste}} $\ast$maliste)
+\begin{DoxyCompactList}\small\item\em Appends la cell c at end of liste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_af9b0afa224fcb8c7ac549412c8b4e567}\label{huff_8c_af9b0afa224fcb8c7ac549412c8b4e567}} 
+\mbox{\hyperlink{structC}{Cell}} $\ast$ \mbox{\hyperlink{huff_8c_af9b0afa224fcb8c7ac549412c8b4e567}{chercheL}} (\mbox{\hyperlink{structC}{Cell}} $\ast$\mbox{\hyperlink{structC}{C}}, \mbox{\hyperlink{structL}{Liste}} $\ast$\mbox{\hyperlink{structL}{L}})
+\begin{DoxyCompactList}\small\item\em return l\textquotesingle{}antecedent de C-\/$>$occurence dans la liste \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huff_8c_a425c465a4576193f215fd332333ec799}{location\+\_\+append}} (\mbox{\hyperlink{structC}{Cell}} $\ast$cell\+\_\+loca, \mbox{\hyperlink{structC}{Cell}} $\ast$cell\+\_\+a, \mbox{\hyperlink{structL}{Liste}} $\ast$maliste)
+\begin{DoxyCompactList}\small\item\em ajoute cell\+\_\+a apres cell\+\_\+loca \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_a6cb57a0eb7e508ec2256382303d95a7a}\label{huff_8c_a6cb57a0eb7e508ec2256382303d95a7a}} 
+void \mbox{\hyperlink{huff_8c_a6cb57a0eb7e508ec2256382303d95a7a}{appendtri}} (\mbox{\hyperlink{structC}{Cell}} $\ast$cell\+\_\+a, \mbox{\hyperlink{structC}{Cell}} $\ast$min2, \mbox{\hyperlink{structL}{Liste}} $\ast$liste\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Ajoute cell\+\_\+a de maniere trier dans la liste si 2 noeud on le même poids on les compare grace à leur profondeur rapport \+: poids/profondeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structL}{Liste}} $\ast$ \mbox{\hyperlink{huff_8c_a78eca82f338a3cd0cfa7e82247c73409}{recupchar}} (F\+I\+LE $\ast$fptr, F\+I\+LE $\ast$trad)
+\begin{DoxyCompactList}\small\item\em Creer une liste de cell non trié et écrit le nombre different de char lu dans un fichier et un espace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huff_8c_a19d01159cc7b46d26682fd2b68521a31}{crea\+Arbre}} (\mbox{\hyperlink{structL}{Liste}} $\ast$ma\+Liste)
+\begin{DoxyCompactList}\small\item\em Creer arbre avec les elements de la liste sans briser les liens de la liste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_a6c817222e1d63976dfedffd29082e173}\label{huff_8c_a6c817222e1d63976dfedffd29082e173}} 
+void \mbox{\hyperlink{huff_8c_a6c817222e1d63976dfedffd29082e173}{print\+Arbre}} (\mbox{\hyperlink{structL}{Liste}} $\ast$maliste)
+\begin{DoxyCompactList}\small\item\em Fonction parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huff_8c_a1cdd6d7011ee20b6550b927b3cf1074f}{print\+Arbre2}} (\mbox{\hyperlink{structC}{Cell}} $\ast$root, \mbox{\hyperlink{structC}{Cell}} $\ast$curr)
+\item 
+\mbox{\Hypertarget{huff_8c_af40e1728c31ab70ce8bdef0f468bc95b}\label{huff_8c_af40e1728c31ab70ce8bdef0f468bc95b}} 
+void \mbox{\hyperlink{huff_8c_af40e1728c31ab70ce8bdef0f468bc95b}{binary\+\_\+char}} (\mbox{\hyperlink{structL}{Liste}} $\ast$ma\+Liste, F\+I\+LE $\ast$trad)
+\begin{DoxyCompactList}\small\item\em fonction securite (inutile) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{huff_8c_add2650eda439385b7734aedbcb7965d3}\label{huff_8c_add2650eda439385b7734aedbcb7965d3}} 
+void {\bfseries parcourandbit2} (\mbox{\hyperlink{structL}{Liste}} $\ast$ma\+Liste, F\+I\+LE $\ast$trad)
+\item 
+void \mbox{\hyperlink{huff_8c_af083c4fac16b9aa2f43cc9969abbb40b}{parcourandbit}} (\mbox{\hyperlink{structC}{Cell}} $\ast$ma\+Liste, unsigned int $\ast$p\+\_\+bitG, unsigned int $\ast$p\+\_\+bitD, size\+\_\+t prof, F\+I\+LE $\ast$trad)
+\item 
+void \mbox{\hyperlink{huff_8c_a327de4bc2042d80ab0e4742d970ab6d0}{print\+\_\+bin\+\_\+file}} (unsigned int const $\ast$binary, size\+\_\+t prof, F\+I\+LE $\ast$recup)
+\item 
+unsigned int $\ast$$\ast$ \mbox{\hyperlink{huff_8c_a5b489f26534f5aae005a0e15e4cebfa1}{creatabfromfile}} (F\+I\+LE $\ast$trad)
+\item 
+\mbox{\hyperlink{structB}{Binaire}} $\ast$$\ast$ \mbox{\hyperlink{huff_8c_ade4e0785d8166a170ca1c91fcc7d9445}{creatabfromfileB}} (F\+I\+LE $\ast$trad, size\+\_\+t sz\+\_\+row)
+\item 
+\mbox{\Hypertarget{huff_8c_a3dd502cd43eacc77bc27551bf374b044}\label{huff_8c_a3dd502cd43eacc77bc27551bf374b044}} 
+void {\bfseries setbitD} (int $\ast$bit)
+\item 
+\mbox{\Hypertarget{huff_8c_a2372583118585212f2d10633d074ee8f}\label{huff_8c_a2372583118585212f2d10633d074ee8f}} 
+void {\bfseries setbitG} (int $\ast$bit)
+\item 
+\mbox{\Hypertarget{huff_8c_ab5381e0bd13f42b787da5f03d1ba5c92}\label{huff_8c_ab5381e0bd13f42b787da5f03d1ba5c92}} 
+int {\bfseries bitwise} (int tab, char mychar, size\+\_\+t taille, size\+\_\+t taille\+\_\+tab)
+\item 
+void \mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}} (const char $\ast$n\+\_\+compress)
+\begin{DoxyCompactList}\small\item\em Compresses le file n\+\_\+fichier et comme output -\/$>$ n\+\_\+compress.\+hman. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huff_8c_ad819caba0a642e977a266e3bdd163f23}{decompression}} (const char $\ast$\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}}, const char $\ast$decompress)
+\begin{DoxyCompactList}\small\item\em fichier compresser grâce a une recherche lineaire des caracteres \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{huff_8c_a928cf3d4f9907caf763d165a73d0aa0b}\label{huff_8c_a928cf3d4f9907caf763d165a73d0aa0b}} 
+size\+\_\+t {\bfseries nb\+\_\+liste} = 0
+\item 
+\mbox{\Hypertarget{huff_8c_a24b2130ec703eacf0fd11954a843a50d}\label{huff_8c_a24b2130ec703eacf0fd11954a843a50d}} 
+size\+\_\+t {\bfseries longeur\+\_\+codage} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}\label{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}} 
+\index{huff.c@{huff.c}!compress@{compress}}
+\index{compress@{compress}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void compress (\begin{DoxyParamCaption}\item[{const char $\ast$}]{n\+\_\+compress }\end{DoxyParamCaption})}
+
+
+
+Compresses le file n\+\_\+fichier et comme output -\/$>$ n\+\_\+compress.\+hman. 
+
+En tête \+: ex \+: nb\+\_\+char\+\_\+liste $\vert$2\+:4\+:$\vert$5$\vert$ $\vert$caractere$\vert$codage\+\_\+binaire$\vert$ .... 1 2 ~\newline
+ 1-\/ le premier champ servira pour gagner de la performance l\textquotesingle{}ors de la decompression en accédant directement au binaire correspondant \+: \char`\"{}aux k ème caracteres dèjà lu \char`\"{} 2-\/ le second champ est la taille de l\textquotesingle{}encodage Compression \+: fichier compresser grâce a une recherche lineaire des caracteres ~\newline
+ ouvre le fichier en mode ecriture + lecture et écrase son contenu
+
+creer liste feuille
+
+Creer fichier de trad
+
+Creation d\textquotesingle{}un tab
+
+Recupere les char du fichier non compresse
+
+Definition at line 582 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{583 \{}
+\DoxyCodeLine{584     \textcolor{keywordtype}{char} *\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}} = malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char})*strlen(n\_compress)+1);}
+\DoxyCodeLine{585     strcpy(\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}},n\_compress);}
+\DoxyCodeLine{586     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* delim = \textcolor{stringliteral}{"."};}
+\DoxyCodeLine{587     \textcolor{keywordtype}{char}* idk = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}})-\/4);}
+\DoxyCodeLine{588     idk = strtok(\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}},delim);}
+\DoxyCodeLine{589     \textcolor{keywordtype}{char}* result = malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char})*strlen(idk)+6);}
+\DoxyCodeLine{590     strcat(result,idk);}
+\DoxyCodeLine{591     strcat(result,\textcolor{stringliteral}{".hman"});}
+\DoxyCodeLine{592 }
+\DoxyCodeLine{594     FILE* fptr = \mbox{\hyperlink{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}{open\_fichier}}(n\_compress, \textcolor{stringliteral}{"a+"}), *comp = \mbox{\hyperlink{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}{open\_fichier}}(result, \textcolor{stringliteral}{"w+"});}
+\DoxyCodeLine{595 }
+\DoxyCodeLine{597     \mbox{\hyperlink{structL}{Liste}}* maliste = \mbox{\hyperlink{huff_8c_a78eca82f338a3cd0cfa7e82247c73409}{recupchar}}(fptr, comp);}
+\DoxyCodeLine{598     \mbox{\hyperlink{huff_8c_aaaae44391ab8a00c45d9e6eeb8233893}{tri\_insertion}}(maliste);}
+\DoxyCodeLine{599 }
+\DoxyCodeLine{600     }
+\DoxyCodeLine{601     \mbox{\hyperlink{huff_8c_a19d01159cc7b46d26682fd2b68521a31}{creaArbre}}(maliste);}
+\DoxyCodeLine{602     \mbox{\hyperlink{huff_8c_a6c817222e1d63976dfedffd29082e173}{printArbre}}(maliste); \textcolor{comment}{//oral}}
+\DoxyCodeLine{603     }
+\DoxyCodeLine{604 }
+\DoxyCodeLine{606     \mbox{\hyperlink{huff_8c_af40e1728c31ab70ce8bdef0f468bc95b}{binary\_char}}(maliste, comp);}
+\DoxyCodeLine{607     }
+\DoxyCodeLine{608     }
+\DoxyCodeLine{609     \textcolor{keywordtype}{char} mychar = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{610     \textcolor{keywordtype}{size\_t} i = 0;}
+\DoxyCodeLine{611 }
+\DoxyCodeLine{613     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}** tab = \mbox{\hyperlink{huff_8c_a5b489f26534f5aae005a0e15e4cebfa1}{creatabfromfile}}(comp); }
+\DoxyCodeLine{614     }
+\DoxyCodeLine{615     fseek(fptr, 0, SEEK\_SET);}
+\DoxyCodeLine{616 }
+\DoxyCodeLine{618     \textcolor{keywordflow}{while} (!(feof(fptr))) }
+\DoxyCodeLine{619     \{}
+\DoxyCodeLine{620 }
+\DoxyCodeLine{621 }
+\DoxyCodeLine{622         \textcolor{keywordflow}{while} (fscanf(fptr, \textcolor{stringliteral}{"\%c"}, \&mychar) != EOF)}
+\DoxyCodeLine{623         \{}
+\DoxyCodeLine{624             i = 0;}
+\DoxyCodeLine{625             \textcolor{keywordflow}{while} (mychar != (\textcolor{keywordtype}{char})tab[0][i]) \{}
+\DoxyCodeLine{626                 }
+\DoxyCodeLine{627                 i++; }
+\DoxyCodeLine{628             \}}
+\DoxyCodeLine{629 }
+\DoxyCodeLine{630             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = tab[2][i] -\/ 1; k >= 0; k-\/-\/)}
+\DoxyCodeLine{631             \{}
+\DoxyCodeLine{632                 fprintf(comp, \textcolor{stringliteral}{"\%c"}, (tab[1][i] \& (1u << k) ? \textcolor{charliteral}{'1'} : \textcolor{charliteral}{'0'}));}
+\DoxyCodeLine{633 }
+\DoxyCodeLine{634             \}}
+\DoxyCodeLine{635 }
+\DoxyCodeLine{636 }
+\DoxyCodeLine{637 }
+\DoxyCodeLine{638         \}}
+\DoxyCodeLine{639 }
+\DoxyCodeLine{640 }
+\DoxyCodeLine{641 }
+\DoxyCodeLine{642     \}}
+\DoxyCodeLine{643 }
+\DoxyCodeLine{644     }
+\DoxyCodeLine{645 }
+\DoxyCodeLine{646     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} k = 0; k < 3; k++)}
+\DoxyCodeLine{647     \{}
+\DoxyCodeLine{648 }
+\DoxyCodeLine{649         free(tab[k]);}
+\DoxyCodeLine{650         tab[k] = NULL;}
+\DoxyCodeLine{651     \}}
+\DoxyCodeLine{652     free(tab);}
+\DoxyCodeLine{653     tab = NULL;}
+\DoxyCodeLine{654 }
+\DoxyCodeLine{655     fclose(comp);}
+\DoxyCodeLine{656     comp = NULL;}
+\DoxyCodeLine{657     fclose(fptr);}
+\DoxyCodeLine{658     fptr = NULL;}
+\DoxyCodeLine{659 }
+\DoxyCodeLine{660 }
+\DoxyCodeLine{661 }
+\DoxyCodeLine{662 \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a19d01159cc7b46d26682fd2b68521a31}\label{huff_8c_a19d01159cc7b46d26682fd2b68521a31}} 
+\index{huff.c@{huff.c}!creaArbre@{creaArbre}}
+\index{creaArbre@{creaArbre}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{creaArbre()}{creaArbre()}}
+{\footnotesize\ttfamily void crea\+Arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structL}{Liste}} $\ast$}]{ma\+Liste }\end{DoxyParamCaption})}
+
+
+
+Creer arbre avec les elements de la liste sans briser les liens de la liste. 
+
+Si la liste a plus d\textquotesingle{}un elem
+
+min 1 et min 2 prennent les valeurs des premiers elem car la liste est trié
+
+dans le cas 2 elem ma\+Liste-\/$>$bege sera egal a N\+U\+LL donc le isemptyliste va proc
+
+creer le node
+
+rattache le node a ses fils
+
+rattache le node a la liste
+
+Definition at line 303 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{304 \{}
+\DoxyCodeLine{305     \mbox{\hyperlink{structC}{Cell}}* min1 = NULL, *min2 = NULL, *node = NULL;}
+\DoxyCodeLine{306     \mbox{\hyperlink{structC}{Cell}}* beg\_arbre = maListe-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}};}
+\DoxyCodeLine{308     \textcolor{keywordflow}{while} ((maListe-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}}) != (maListe-\/>\mbox{\hyperlink{structL_afddaf744e12af92897901d9c24b027ba}{ende}}))}
+\DoxyCodeLine{309     \{   }
+\DoxyCodeLine{310         min1 = maListe-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}};}
+\DoxyCodeLine{311         min2 = min1-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}};}
+\DoxyCodeLine{313         maListe-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}} = min2-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}}; }
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315 }
+\DoxyCodeLine{317         node = \mbox{\hyperlink{huff_8c_ab3fd6fa4249433bd8ff5ab741b8dcd24}{creaNode}}(min1, min2); }
+\DoxyCodeLine{319         min1-\/>\mbox{\hyperlink{structC_a2b7b4559b18444ca1cb8f0ddabe5eaf9}{pere\_A}} = min2-\/>\mbox{\hyperlink{structC_a2b7b4559b18444ca1cb8f0ddabe5eaf9}{pere\_A}} = node;}
+\DoxyCodeLine{320 }
+\DoxyCodeLine{321         }
+\DoxyCodeLine{323      \mbox{\hyperlink{huff_8c_a6cb57a0eb7e508ec2256382303d95a7a}{appendtri}}(node,min2, maListe);}
+\DoxyCodeLine{324     \}}
+\DoxyCodeLine{325     }
+\DoxyCodeLine{326 }
+\DoxyCodeLine{327 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_ab3fd6fa4249433bd8ff5ab741b8dcd24}\label{huff_8c_ab3fd6fa4249433bd8ff5ab741b8dcd24}} 
+\index{huff.c@{huff.c}!creaNode@{creaNode}}
+\index{creaNode@{creaNode}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{creaNode()}{creaNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structC}{Cell}}$\ast$ crea\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{min1,  }\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{min2 }\end{DoxyParamCaption})}
+
+
+
+creer un noeud avec les 2 fils connu et on actualise son nombre de feuille 
+
+Nouveau occurence = la somme des deux plus petites
+
+Definition at line 177 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178 \{}
+\DoxyCodeLine{179     \mbox{\hyperlink{structC}{Cell}} * maCell = NULL;}
+\DoxyCodeLine{180     \textcolor{keywordflow}{if} (!(maCell = malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structC}{Cell}}))))}
+\DoxyCodeLine{181     \{}
+\DoxyCodeLine{182         printf(\textcolor{stringliteral}{"Description de l erreur :\(\backslash\)n"});}
+\DoxyCodeLine{183         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186     \}}
+\DoxyCodeLine{187     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{189         maCell-\/>occurence = min1-\/>occurence + min2-\/>occurence;}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191         maCell-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}} = (\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(min1) ? (\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(min2) ? 2 : min2-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}} + 1) : (\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(min2) ? min1-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}} + 1 : min1-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}} + min2-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}}));}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193         maCell-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}} = NULL;}
+\DoxyCodeLine{194         maCell-\/>\mbox{\hyperlink{structC_a2b7b4559b18444ca1cb8f0ddabe5eaf9}{pere\_A}} = NULL;}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196         maCell-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}} = min1;}
+\DoxyCodeLine{197         maCell-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}} = min2;}
+\DoxyCodeLine{198         }
+\DoxyCodeLine{199         \textcolor{keywordflow}{return} maCell;}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201     \}}
+\DoxyCodeLine{202 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a5b489f26534f5aae005a0e15e4cebfa1}\label{huff_8c_a5b489f26534f5aae005a0e15e4cebfa1}} 
+\index{huff.c@{huff.c}!creatabfromfile@{creatabfromfile}}
+\index{creatabfromfile@{creatabfromfile}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{creatabfromfile()}{creatabfromfile()}}
+{\footnotesize\ttfamily unsigned int$\ast$$\ast$ creatabfromfile (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{traducteur }\end{DoxyParamCaption})}
+
+creer un tab qui contient \+: 0 \+: les caractere dans la premiere ligne 1 \+: le codage en binaire du caractere dans la seconde ligne 2 \+: la taille du codage dans la troisieme ligne Remarque \+: le nombre de feuille des noeuds parents n\textquotesingle{}étant pas utiliser dans cette étape ils sont volontairement oublié 
+
+Definition at line 475 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{476 \{}
+\DoxyCodeLine{477     fseek(trad, 0, SEEK\_SET);\textcolor{comment}{//flush le trad}}
+\DoxyCodeLine{478     \textcolor{keywordtype}{size\_t} sz\_row = 0;}
+\DoxyCodeLine{479     fscanf(trad, \textcolor{stringliteral}{"\%zu"}, \&sz\_row);}
+\DoxyCodeLine{480     printf(\textcolor{stringliteral}{"Longeur moyenne codage : \%f\(\backslash\)n"}, (\textcolor{keywordtype}{float})longeur\_codage / sz\_row); \textcolor{comment}{//pour oral}}
+\DoxyCodeLine{481     getc(trad);}
+\DoxyCodeLine{482     \textcolor{keywordtype}{char} recup = (char)0;}
+\DoxyCodeLine{483     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} **tab = malloc(3 * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})); \textcolor{comment}{// pour chaque caractere on creer une struct R et on la mets dans un tableau pour un acess + facile  remarque : marche aussi avec liste simplement chaine mais deja fait}}
+\DoxyCodeLine{484 }
+\DoxyCodeLine{485     \textcolor{keywordflow}{if} (tab == NULL) \{  \textcolor{comment}{// verif alloc bonne }}
+\DoxyCodeLine{486         printf(\textcolor{stringliteral}{"Description de l erreur :\(\backslash\)n"}); }
+\DoxyCodeLine{487         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{488     \}}
+\DoxyCodeLine{489     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{490         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < 3; i++) \{}
+\DoxyCodeLine{491             tab[i] = malloc(sz\_row * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}));}
+\DoxyCodeLine{492 }
+\DoxyCodeLine{493         \}}
+\DoxyCodeLine{494     }
+\DoxyCodeLine{495 }
+\DoxyCodeLine{496         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < sz\_row; i++)}
+\DoxyCodeLine{497         \{}
+\DoxyCodeLine{498             }
+\DoxyCodeLine{499             fscanf(trad, \textcolor{stringliteral}{"\%d"}, \&(tab[2][i]));}
+\DoxyCodeLine{500             \textcolor{keywordflow}{while} ((recup = getc(trad)) \&\& (recup == \textcolor{charliteral}{':'})) \{}
+\DoxyCodeLine{501                 fscanf(trad, \textcolor{stringliteral}{"\%d"}, \&(tab[2][i]));}
+\DoxyCodeLine{502                 }
+\DoxyCodeLine{503             \}}
+\DoxyCodeLine{504             tab[0][i] = getc(trad);}
+\DoxyCodeLine{505             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} k = 0; k < tab[2][i] \&\& (recup = getc(trad)) \&\& recup != EOF; k++) \{\textcolor{comment}{//\&\& recup!='\(\backslash\)n'}}
+\DoxyCodeLine{506 }
+\DoxyCodeLine{507                 (((int)recup -\/ 48) ? setbitD(\&(tab[1][i])) : setbitG(\&(tab[1][i])));}
+\DoxyCodeLine{508             \}}
+\DoxyCodeLine{509             }
+\DoxyCodeLine{510 }
+\DoxyCodeLine{511         \}}
+\DoxyCodeLine{512 }
+\DoxyCodeLine{513     \}}
+\DoxyCodeLine{514     \textcolor{keywordflow}{return} tab;}
+\DoxyCodeLine{515 }
+\DoxyCodeLine{516 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_ade4e0785d8166a170ca1c91fcc7d9445}\label{huff_8c_ade4e0785d8166a170ca1c91fcc7d9445}} 
+\index{huff.c@{huff.c}!creatabfromfileB@{creatabfromfileB}}
+\index{creatabfromfileB@{creatabfromfileB}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{creatabfromfileB()}{creatabfromfileB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structB}{Binaire}}$\ast$$\ast$ creatabfromfileB (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{trad,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+Même procéder que pour l\textquotesingle{}autre tableau mais pour la decompression cette fois ci 0 \+: les caractere dans la premiere ligne 1 \+: le codage en binaire du caractere dans la seconde ligne 2 \+: la taille du codage dans la troisieme ligne 3 \+: tableau d\textquotesingle{}int contenant les nb\+\_\+feuilles des nodes parents ~\newline
+ 
+
+Definition at line 520 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{521 \{}
+\DoxyCodeLine{522     \textcolor{keywordtype}{char} recup = (char)0;}
+\DoxyCodeLine{523     \mbox{\hyperlink{structB}{Binaire}}** tab = malloc(sz\_row * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structB}{Binaire}}*)); \textcolor{comment}{// pour chaque caractere on creer une struct R et on la mets dans un tableau pour un acess + facile  remarque : marche aussi avec liste simplement chaine mais deja fait}}
+\DoxyCodeLine{524 }
+\DoxyCodeLine{525     \textcolor{keywordflow}{if} (tab == NULL) \{  \textcolor{comment}{// verif alloc bonne }}
+\DoxyCodeLine{526         printf(\textcolor{stringliteral}{"Description de l erreur :\(\backslash\)n"}); \textcolor{comment}{// faudrait  longjump vers un switch avec une id pour code}}
+\DoxyCodeLine{527         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{528     \}}
+\DoxyCodeLine{529     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{530     }
+\DoxyCodeLine{531         \textcolor{keywordtype}{size\_t} j = 0, lol = 0, counter = 0;}
+\DoxyCodeLine{532         \textcolor{comment}{// consome le saut de ligne volontaire getc(fptr);}}
+\DoxyCodeLine{533         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < sz\_row; i++)}
+\DoxyCodeLine{534         \{}
+\DoxyCodeLine{535             tab[i] = \mbox{\hyperlink{huff_8c_a14699502c1b1906b163bcbfe697ad60b}{creaBinaire}}();}
+\DoxyCodeLine{536             j = 0;}
+\DoxyCodeLine{537             counter = 0;}
+\DoxyCodeLine{538             fscanf(trad, \textcolor{stringliteral}{"\%zu"}, \&(lol));}
+\DoxyCodeLine{539             \textcolor{keywordflow}{while} ((recup = getc(trad)) \&\& (recup == \textcolor{charliteral}{':'})) \{}
+\DoxyCodeLine{540                 ++counter;}
+\DoxyCodeLine{541                 \textcolor{keywordflow}{if} (counter >= tab[i]-\/>taille) \{}
+\DoxyCodeLine{542                     \textcolor{keywordflow}{if} (!(tab[i]-\/>b\_tab = (\textcolor{keywordtype}{int}*)realloc(tab[i]-\/>b\_tab, (2 * counter) * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int})))) \{}
+\DoxyCodeLine{543                         printf(\textcolor{stringliteral}{"ERREUR , pas assez de memoire \(\backslash\)n"});}
+\DoxyCodeLine{544                         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{545                     \}}
+\DoxyCodeLine{546                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{547                     \{}
+\DoxyCodeLine{548                         tab[i]-\/>\mbox{\hyperlink{structB_a63e9f5ee972b1ba4de16d16a037ff3ef}{taille}} = 2 * counter;}
+\DoxyCodeLine{549                     \}}
+\DoxyCodeLine{550                 \}}
+\DoxyCodeLine{551                 tab[i]-\/>\mbox{\hyperlink{structB_ae439e7c95384d9db5979e4bfd737ab07}{b\_tab}}[j++] = lol;}
+\DoxyCodeLine{552                 fscanf(trad, \textcolor{stringliteral}{"\%zu"}, \&(lol));}
+\DoxyCodeLine{553 }
+\DoxyCodeLine{554             \}}
+\DoxyCodeLine{555             tab[i]-\/>\mbox{\hyperlink{structB_ae439e7c95384d9db5979e4bfd737ab07}{b\_tab}}[j++] = 1;}
+\DoxyCodeLine{556             \textcolor{keywordflow}{for} (; j < tab[i]-\/>\mbox{\hyperlink{structB_a63e9f5ee972b1ba4de16d16a037ff3ef}{taille}}; j++)tab[i]-\/>b\_tab[j] = 0;}
+\DoxyCodeLine{557             }
+\DoxyCodeLine{558             tab[i]-\/>\mbox{\hyperlink{structB_a63e9f5ee972b1ba4de16d16a037ff3ef}{taille}} = lol;}
+\DoxyCodeLine{559             tab[i]-\/>\mbox{\hyperlink{structB_a6e953260af4ae708903582152372d3af}{cara}} = getc(trad);}
+\DoxyCodeLine{560             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} k = 0; k < tab[i]-\/>\mbox{\hyperlink{structB_a63e9f5ee972b1ba4de16d16a037ff3ef}{taille}} \&\& (recup = getc(trad)) \&\& recup != EOF; k++) \{\textcolor{comment}{//\&\& recup!='\(\backslash\)n'}}
+\DoxyCodeLine{561 }
+\DoxyCodeLine{562                 (((int)recup -\/ 48) ? setbitD(\&(tab[i]-\/>bin)) : setbitG(\&(tab[i]-\/>bin)));}
+\DoxyCodeLine{563             \}}
+\DoxyCodeLine{564         }
+\DoxyCodeLine{565             }
+\DoxyCodeLine{566             }
+\DoxyCodeLine{567 }
+\DoxyCodeLine{568         \}}
+\DoxyCodeLine{569 }
+\DoxyCodeLine{570     \}}
+\DoxyCodeLine{571     \textcolor{keywordflow}{return} tab;}
+\DoxyCodeLine{572 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_ad819caba0a642e977a266e3bdd163f23}\label{huff_8c_ad819caba0a642e977a266e3bdd163f23}} 
+\index{huff.c@{huff.c}!decompression@{decompression}}
+\index{decompression@{decompression}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{decompression()}{decompression()}}
+{\footnotesize\ttfamily void decompression (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nom,  }\item[{const char $\ast$}]{compresse }\end{DoxyParamCaption})}
+
+
+
+fichier compresser grâce a une recherche lineaire des caracteres 
+
+chaque bit étant associé à un element de l\textquotesingle{}arbre il comporte une adresse symboliser par son codage donc si le n ème caractere lu n\textquotesingle{}est pas valide avec la n ème place du binaire étudier nous pouvons grâce a la troisième ligne du tableau de binaire accéder à l\textquotesingle{}adresse correcte pour ce fait nous incrémentons un compteur qui compte le nombre de place valide et si le bit n\textquotesingle{}est plus correcte nous récuperons le tab\mbox{[}i\mbox{]}\mbox{[}compteur\mbox{]} pour accéder a l\textquotesingle{}encodage correspondant ~\newline
+ Sinon on continue la comparaison avec binaire avec 1 bit en plus
+
+ferme les flux \+:
+
+Definition at line 665 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{666 \{}
+\DoxyCodeLine{667     FILE *comp = \mbox{\hyperlink{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}{open\_fichier}}(\mbox{\hyperlink{huff_8c_a2a96b34bf5e5629aff8b2c22ae84835f}{compress}}, \textcolor{stringliteral}{"r"}), *result = \mbox{\hyperlink{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}{open\_fichier}}(decompress, \textcolor{stringliteral}{"w"});}
+\DoxyCodeLine{668     \textcolor{keywordtype}{size\_t} sz\_row = 0;}
+\DoxyCodeLine{669     fscanf(comp, \textcolor{stringliteral}{"\%zu"}, \&sz\_row);}
+\DoxyCodeLine{670     getc(comp);}
+\DoxyCodeLine{671     \mbox{\hyperlink{structB}{Binaire}}** tab = \mbox{\hyperlink{huff_8c_ade4e0785d8166a170ca1c91fcc7d9445}{creatabfromfileB}}(comp, sz\_row);}
+\DoxyCodeLine{672     \textcolor{keywordtype}{size\_t} i = 0;}
+\DoxyCodeLine{673     \textcolor{comment}{//unsigned int binaire = 0;}}
+\DoxyCodeLine{674     \textcolor{keywordtype}{size\_t} taille\_bin = 0;}
+\DoxyCodeLine{675     \textcolor{keywordtype}{char} mychar = (char)0;}
+\DoxyCodeLine{676     \textcolor{keywordtype}{size\_t} k = 0;}
+\DoxyCodeLine{677     }
+\DoxyCodeLine{678     }
+\DoxyCodeLine{679     \textcolor{keywordflow}{while} (!(feof(comp))) \textcolor{comment}{//recupere les char du fichier non compresse}}
+\DoxyCodeLine{680     \{}
+\DoxyCodeLine{681 }
+\DoxyCodeLine{682 }
+\DoxyCodeLine{683         \textcolor{comment}{//binaire = 0;}}
+\DoxyCodeLine{684         i = 0;}
+\DoxyCodeLine{685         taille\_bin = 0;}
+\DoxyCodeLine{686         k = 0;}
+\DoxyCodeLine{687         \textcolor{keywordflow}{while} ((tab[i]-\/>taille != taille\_bin )\&\&(mychar = getc(comp)) \&\& mychar != EOF )}
+\DoxyCodeLine{688         \{}
+\DoxyCodeLine{689 }
+\DoxyCodeLine{690 }
+\DoxyCodeLine{691             ++taille\_bin;}
+\DoxyCodeLine{692             }
+\DoxyCodeLine{693             \textcolor{keywordflow}{if}(!(bitwise(tab[i]-\/>bin, mychar, taille\_bin, tab[i]-\/>taille)))}
+\DoxyCodeLine{694             \{}
+\DoxyCodeLine{695                 }
+\DoxyCodeLine{696                 i += tab[i]-\/>\mbox{\hyperlink{structB_ae439e7c95384d9db5979e4bfd737ab07}{b\_tab}}[k];}
+\DoxyCodeLine{697                 }
+\DoxyCodeLine{698                 k = 0;}
+\DoxyCodeLine{699             \}\textcolor{keywordflow}{else} k++;}
+\DoxyCodeLine{700 }
+\DoxyCodeLine{701         \}}
+\DoxyCodeLine{703         \textcolor{keywordflow}{if} (taille\_bin > 0) \{}
+\DoxyCodeLine{704             fprintf(result, \textcolor{stringliteral}{"\%c"}, tab[i]-\/>cara);}
+\DoxyCodeLine{705         \}}
+\DoxyCodeLine{706 }
+\DoxyCodeLine{707 }
+\DoxyCodeLine{708     \}}
+\DoxyCodeLine{709     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} k = 0; k < sz\_row; k++)}
+\DoxyCodeLine{710     \{}
+\DoxyCodeLine{711 }
+\DoxyCodeLine{712         free((tab[k]-\/>b\_tab));}
+\DoxyCodeLine{713         tab[k]-\/>\mbox{\hyperlink{structB_ae439e7c95384d9db5979e4bfd737ab07}{b\_tab}} = NULL;}
+\DoxyCodeLine{714         free(tab[k]);}
+\DoxyCodeLine{715         tab[k] = NULL;}
+\DoxyCodeLine{716 }
+\DoxyCodeLine{717 }
+\DoxyCodeLine{718     \}}
+\DoxyCodeLine{719     free(tab);}
+\DoxyCodeLine{720     tab = NULL;}
+\DoxyCodeLine{722     fclose(comp);}
+\DoxyCodeLine{723     comp = NULL;}
+\DoxyCodeLine{724     fclose(result);}
+\DoxyCodeLine{725     result = NULL;}
+\DoxyCodeLine{726 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a48ec7d4cc3b2b07b57e7b0e5093600e6}\label{huff_8c_a48ec7d4cc3b2b07b57e7b0e5093600e6}} 
+\index{huff.c@{huff.c}!default\_append@{default\_append}}
+\index{default\_append@{default\_append}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{default\_append()}{default\_append()}}
+{\footnotesize\ttfamily void default\+\_\+append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{structL}{Liste}} $\ast$}]{maliste }\end{DoxyParamCaption})}
+
+
+
+Appends la cell c at end of liste. 
+
+Si liste est vide, le beg = end = c;
+
+Sinon on mets la cell \mbox{\hyperlink{structC}{C}} apres derniere position
+
+Definition at line 203 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204 \{}
+\DoxyCodeLine{206     \textcolor{keywordflow}{if} (\mbox{\hyperlink{huff_8c_a028c2d6b83a0d360ab81445934d8936d}{is\_emptyL}}(maliste)) \{}
+\DoxyCodeLine{207         maliste-\/>\mbox{\hyperlink{structL_afddaf744e12af92897901d9c24b027ba}{ende}} = c;}
+\DoxyCodeLine{208         maliste-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}} = c;}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{212         (maliste-\/>\mbox{\hyperlink{structL_afddaf744e12af92897901d9c24b027ba}{ende}}-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}}) = c;}
+\DoxyCodeLine{213         maliste-\/>\mbox{\hyperlink{structL_afddaf744e12af92897901d9c24b027ba}{ende}} = c;}
+\DoxyCodeLine{214     \}}
+\DoxyCodeLine{215 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a425c465a4576193f215fd332333ec799}\label{huff_8c_a425c465a4576193f215fd332333ec799}} 
+\index{huff.c@{huff.c}!location\_append@{location\_append}}
+\index{location\_append@{location\_append}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{location\_append()}{location\_append()}}
+{\footnotesize\ttfamily void location\+\_\+append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{cell\+\_\+loca,  }\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{cell\+\_\+a,  }\item[{\mbox{\hyperlink{structL}{Liste}} $\ast$}]{maliste }\end{DoxyParamCaption})}
+
+
+
+ajoute cell\+\_\+a apres cell\+\_\+loca 
+
+Relie cell\+\_\+loca au nouveau
+
+Definition at line 229 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{230 \{}
+\DoxyCodeLine{231     \textcolor{keywordflow}{if} (cell\_loca-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}}) \{}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233         cell\_a-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}} = cell\_loca-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}};}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{236         cell\_loca-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}} = cell\_a; }
+\DoxyCodeLine{237     \}}
+\DoxyCodeLine{238     \textcolor{keywordflow}{else} }
+\DoxyCodeLine{239     \{}
+\DoxyCodeLine{240         cell\_loca-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}} = cell\_a;}
+\DoxyCodeLine{241         maliste-\/>\mbox{\hyperlink{structL_afddaf744e12af92897901d9c24b027ba}{ende}} = cell\_a;}
+\DoxyCodeLine{242     \}}
+\DoxyCodeLine{243     }
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}\label{huff_8c_a1aaef183763240d92ed14caeb8d89fdc}} 
+\index{huff.c@{huff.c}!open\_fichier@{open\_fichier}}
+\index{open\_fichier@{open\_fichier}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{open\_fichier()}{open\_fichier()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ open\+\_\+fichier (\begin{DoxyParamCaption}\item[{const char $\ast$}]{n\+\_\+fichier,  }\item[{const char $\ast$}]{param }\end{DoxyParamCaption})}
+
+
+
+open le file avec minimum securite 
+
+If file not opened
+
+Definition at line 95 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96     \{}
+\DoxyCodeLine{97         FILE *fptr = fopen(n\_fichier,param);}
+\DoxyCodeLine{98         }
+\DoxyCodeLine{100         \textcolor{keywordflow}{if} (fptr==NULL)}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             printf(\textcolor{stringliteral}{"Error File: \%s  do not exist or corrupt\(\backslash\)n"}, n\_fichier);}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             exit(EXIT\_FAILURE);}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106         \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{return} fptr; \}}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_af083c4fac16b9aa2f43cc9969abbb40b}\label{huff_8c_af083c4fac16b9aa2f43cc9969abbb40b}} 
+\index{huff.c@{huff.c}!parcourandbit@{parcourandbit}}
+\index{parcourandbit@{parcourandbit}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{parcourandbit()}{parcourandbit()}}
+{\footnotesize\ttfamily void parcourandbit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{ma\+Liste,  }\item[{unsigned int $\ast$}]{p\+\_\+bitG,  }\item[{unsigned int $\ast$}]{p\+\_\+bitD,  }\item[{size\+\_\+t}]{,  }\item[{F\+I\+LE $\ast$}]{ }\end{DoxyParamCaption})}
+
+parcoure l\textquotesingle{}arbre recursivement et ecrit en partant de l\textquotesingle{}element le plus puissant(fils\+\_\+\+D) qui est vraisembablement le moins profond optimise la compression \+: les caracteres les plus frequent etant les plus puissant ils sont marqués en premier ~\newline
+ Si c un node $<$=$>$ pas une feuille
+
+si c une feuille
+
+Definition at line 395 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{396 \{}
+\DoxyCodeLine{398     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}})) \{ }
+\DoxyCodeLine{399 }
+\DoxyCodeLine{400         fprintf(trad, \textcolor{stringliteral}{"\%d:"}, (maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}})-\/>val\_c);}
+\DoxyCodeLine{401         (setbitD(p\_bitD));}
+\DoxyCodeLine{402         ++prof;}
+\DoxyCodeLine{403         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} p\_bitG2 = *p\_bitD;}
+\DoxyCodeLine{404 }
+\DoxyCodeLine{405 }
+\DoxyCodeLine{406 }
+\DoxyCodeLine{407         \mbox{\hyperlink{huff_8c_af083c4fac16b9aa2f43cc9969abbb40b}{parcourandbit}}(maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}}, \&p\_bitG2, p\_bitD, prof, trad); }
+\DoxyCodeLine{408 }
+\DoxyCodeLine{409     \}}
+\DoxyCodeLine{411     \textcolor{keywordflow}{else} \{ }
+\DoxyCodeLine{412         }
+\DoxyCodeLine{413         }
+\DoxyCodeLine{414         fprintf(trad, \textcolor{stringliteral}{"\%zu \%c"}, ++prof,(\textcolor{keywordtype}{char})maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}}-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}});}
+\DoxyCodeLine{415         setbitD(p\_bitD);}
+\DoxyCodeLine{416         printf(\textcolor{stringliteral}{"Caractere :\%c  codage binaire :"}, maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}}-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}});\textcolor{comment}{//pour oral}}
+\DoxyCodeLine{417         \mbox{\hyperlink{huff_8c_a327de4bc2042d80ab0e4742d970ab6d0}{print\_bin\_file}}(p\_bitD ,prof, trad);}
+\DoxyCodeLine{418         printf(\textcolor{stringliteral}{"\(\backslash\)n"});\textcolor{comment}{//pour oral}}
+\DoxyCodeLine{419         free(maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}});}
+\DoxyCodeLine{420 }
+\DoxyCodeLine{421         maListe-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}} = NULL;}
+\DoxyCodeLine{422         }
+\DoxyCodeLine{423     \}}
+\DoxyCodeLine{424     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}})) \{}
+\DoxyCodeLine{425 }
+\DoxyCodeLine{426 }
+\DoxyCodeLine{427         (setbitG(p\_bitG));}
+\DoxyCodeLine{428 }
+\DoxyCodeLine{429         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} p\_bitD2 = *p\_bitG;}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431 }
+\DoxyCodeLine{432         \mbox{\hyperlink{huff_8c_af083c4fac16b9aa2f43cc9969abbb40b}{parcourandbit}}(maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}}, \&p\_bitD2, p\_bitG, prof, trad);}
+\DoxyCodeLine{433         free(maListe);}
+\DoxyCodeLine{434         maListe = NULL;}
+\DoxyCodeLine{435         }
+\DoxyCodeLine{436     \}}
+\DoxyCodeLine{437     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{438         setbitG(p\_bitG);}
+\DoxyCodeLine{439         fprintf(trad,\textcolor{stringliteral}{"\%zu \%c"},prof,(\textcolor{keywordtype}{char})(maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}}-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}}));}
+\DoxyCodeLine{440         printf(\textcolor{stringliteral}{"Caractere :\%c  codage binaire :"}, maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}}-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}});\textcolor{comment}{//pour oral}}
+\DoxyCodeLine{441         \mbox{\hyperlink{huff_8c_a327de4bc2042d80ab0e4742d970ab6d0}{print\_bin\_file}}(p\_bitG, prof, trad);}
+\DoxyCodeLine{442         printf(\textcolor{stringliteral}{"\(\backslash\)n"});\textcolor{comment}{//pour oral}}
+\DoxyCodeLine{443         free(maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}});}
+\DoxyCodeLine{444         maListe-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}} = NULL;}
+\DoxyCodeLine{445     }
+\DoxyCodeLine{446         free(maListe);}
+\DoxyCodeLine{447         maListe = NULL;}
+\DoxyCodeLine{448 }
+\DoxyCodeLine{449     \}}
+\DoxyCodeLine{450 }
+\DoxyCodeLine{451 }
+\DoxyCodeLine{452 }
+\DoxyCodeLine{453 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a327de4bc2042d80ab0e4742d970ab6d0}\label{huff_8c_a327de4bc2042d80ab0e4742d970ab6d0}} 
+\index{huff.c@{huff.c}!print\_bin\_file@{print\_bin\_file}}
+\index{print\_bin\_file@{print\_bin\_file}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{print\_bin\_file()}{print\_bin\_file()}}
+{\footnotesize\ttfamily void print\+\_\+bin\+\_\+file (\begin{DoxyParamCaption}\item[{unsigned int const $\ast$}]{binary,  }\item[{size\+\_\+t}]{,  }\item[{F\+I\+LE $\ast$}]{ }\end{DoxyParamCaption})}
+
+se declenche si le binaire est associer a une feuille ecrit le binaire dans un fichier après le caractere qui lui est associer ~\newline
+ 
+
+Definition at line 455 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{456 \{}
+\DoxyCodeLine{457     longeur\_codage += prof; \textcolor{comment}{//pour oral}}
+\DoxyCodeLine{458     \textcolor{comment}{/*char *str=malloc(prof+1) ;}}
+\DoxyCodeLine{459 \textcolor{comment}{    for (size\_t i=0; i<prof; i++)}}
+\DoxyCodeLine{460 \textcolor{comment}{    \{str[i] = (*binary \& (1u <<(prof-\/i-\/1)) ? '1' : '0');}}
+\DoxyCodeLine{461 \textcolor{comment}{    \}}}
+\DoxyCodeLine{462 \textcolor{comment}{    str[prof] = '\(\backslash\)0';}}
+\DoxyCodeLine{463 \textcolor{comment}{    printf("\%s\(\backslash\)n", str);}}
+\DoxyCodeLine{464 \textcolor{comment}{    fprintf(recup, "\%s ",str);*/}}
+\DoxyCodeLine{465 }
+\DoxyCodeLine{466     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < prof; i++)}
+\DoxyCodeLine{467     \{}
+\DoxyCodeLine{468         fprintf(recup, \textcolor{stringliteral}{"\%c"}, (*binary \& (1u << (prof -\/ i -\/ 1)) ? \textcolor{charliteral}{'1'} : \textcolor{charliteral}{'0'}));}
+\DoxyCodeLine{469         printf(\textcolor{stringliteral}{"\%c"}, (*binary \& (1u << (prof -\/ i -\/ 1)) ? \textcolor{charliteral}{'1'} : \textcolor{charliteral}{'0'}));}
+\DoxyCodeLine{470     \}}
+\DoxyCodeLine{471     }
+\DoxyCodeLine{472 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a1cdd6d7011ee20b6550b927b3cf1074f}\label{huff_8c_a1cdd6d7011ee20b6550b927b3cf1074f}} 
+\index{huff.c@{huff.c}!printArbre2@{printArbre2}}
+\index{printArbre2@{printArbre2}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{printArbre2()}{printArbre2()}}
+{\footnotesize\ttfamily void print\+Arbre2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{maliste,  }\item[{\mbox{\hyperlink{structC}{Cell}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+fonction fille \+: utilise les liens de la liste pour écrire l\textquotesingle{}arbre par étage ( parcour en longueur ) en partant de l\textquotesingle{}élément le plus petit == fils gauche Si le fils\+\_\+gauche est une feuille alors nous cherchons le premier noeud de la ligne dont fait parti le fils\+\_\+G \mbox{\hyperlink{structL}{L}}\textquotesingle{}algorithme s\textquotesingle{}arrête quand la ligne ne contient plus que des feuilles ~\newline
+ 
+
+Definition at line 352 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{353 \{}
+\DoxyCodeLine{354     \textcolor{keywordflow}{if} (curr != NULL)\{}
+\DoxyCodeLine{355         \mbox{\hyperlink{structC}{Cell}}* parcour = curr-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}};}
+\DoxyCodeLine{356         }
+\DoxyCodeLine{357     \textcolor{keywordflow}{if} (\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(parcour)) \{}
+\DoxyCodeLine{358         \textcolor{keywordflow}{for} (; parcour != root-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}} \&\& \mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(parcour) ; parcour = parcour-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}})}
+\DoxyCodeLine{359         \{}
+\DoxyCodeLine{360             printf(\textcolor{stringliteral}{"Feuille :\%p Pere :\%p Caractere :\%c Probabilite :\%f\(\backslash\)n"}, parcour,parcour-\/>\mbox{\hyperlink{structC_a2b7b4559b18444ca1cb8f0ddabe5eaf9}{pere\_A}}, parcour-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}},(\textcolor{keywordtype}{float})parcour-\/>occurence / nb\_liste);}
+\DoxyCodeLine{361         \}}
+\DoxyCodeLine{362         \textcolor{keywordflow}{if} (parcour == root-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}})\textcolor{keywordflow}{return};}
+\DoxyCodeLine{363     \}}
+\DoxyCodeLine{364     }
+\DoxyCodeLine{365     \mbox{\hyperlink{structC}{Cell}}* tmp = parcour;}
+\DoxyCodeLine{366     \textcolor{keywordflow}{for} (; parcour != root-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}}; parcour = parcour-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}})}
+\DoxyCodeLine{367     \{}
+\DoxyCodeLine{368     }
+\DoxyCodeLine{369         \textcolor{keywordflow}{if}(\mbox{\hyperlink{huff_8c_ad745cdcecf2f9da4cffc314b0dfdacd0}{isfeuille}}(parcour))printf(\textcolor{stringliteral}{"Feuille :\%p Pere :\%p Caractere :\%c Probabilite :\%f\(\backslash\)n"}, parcour, parcour-\/>\mbox{\hyperlink{structC_a2b7b4559b18444ca1cb8f0ddabe5eaf9}{pere\_A}}, parcour-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}}, (\textcolor{keywordtype}{float})parcour-\/>occurence / nb\_liste);}
+\DoxyCodeLine{370         \textcolor{keywordflow}{else} printf(\textcolor{stringliteral}{"Node :\%p Fils Gauche :\%p Fils Droit :\%p Probabilite :\%f\(\backslash\)n"}, parcour,parcour-\/>\mbox{\hyperlink{structC_a80fcd8ecc23d5016ea3d26643176a9a9}{filsG\_A}}, parcour-\/>\mbox{\hyperlink{structC_ae63e5c17965baa48bb3e47b50db631d3}{filsD\_A}}, (\textcolor{keywordtype}{float})parcour-\/>occurence / nb\_liste);}
+\DoxyCodeLine{371     \}}
+\DoxyCodeLine{372     \mbox{\hyperlink{huff_8c_a1cdd6d7011ee20b6550b927b3cf1074f}{printArbre2}}(curr,tmp);}
+\DoxyCodeLine{373     \}}
+\DoxyCodeLine{374 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{huff_8c_a78eca82f338a3cd0cfa7e82247c73409}\label{huff_8c_a78eca82f338a3cd0cfa7e82247c73409}} 
+\index{huff.c@{huff.c}!recupchar@{recupchar}}
+\index{recupchar@{recupchar}!huff.c@{huff.c}}
+\doxysubsubsection{\texorpdfstring{recupchar()}{recupchar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structL}{Liste}}$\ast$ recupchar (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fptr,  }\item[{F\+I\+LE $\ast$}]{trad }\end{DoxyParamCaption})}
+
+
+
+Creer une liste de cell non trié et écrit le nombre different de char lu dans un fichier et un espace. 
+
+Le char qui va nous servir a remplir la liste
+
+La cell qu va nous permettre de parcourir la liste qui se fait remplir
+
+on fait la boucle tant qu il reste des char dans le fichier
+
+on cree une nouvel cell avec la valeur de huff et on l append dans la liste trie
+
+on return la liste complete
+
+Definition at line 271 of file huff.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272 \{}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{274     fseek(fptr, 0, SEEK\_SET);}
+\DoxyCodeLine{275     \mbox{\hyperlink{structL}{Liste}}* maliste = \mbox{\hyperlink{huff_8c_ab9e0cad8290bf32b14f996352f0d3d99}{creaListe}}();}
+\DoxyCodeLine{276     \textcolor{keywordtype}{size\_t} counter = 0;}
+\DoxyCodeLine{278     \textcolor{keywordtype}{char} huff = getc(fptr); }
+\DoxyCodeLine{280     \mbox{\hyperlink{structC}{Cell}}* parcour = maliste-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}}; }
+\DoxyCodeLine{282     \textcolor{keywordflow}{while} (huff != EOF) }
+\DoxyCodeLine{283     \{}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285         \textcolor{keywordflow}{for} (parcour = maliste-\/>\mbox{\hyperlink{structL_a882cc433984bacad6a0cc5c8a8d659ed}{bege}}; parcour \&\& huff != (parcour-\/>\mbox{\hyperlink{structC_a5c39fa7662552f7f8537fccd93a4d8d5}{val\_c}}); parcour = parcour-\/>\mbox{\hyperlink{structC_a42040310d2eee0ab170462aa81664c03}{suiv\_L}});}
+\DoxyCodeLine{286         }
+\DoxyCodeLine{287         \textcolor{keywordflow}{if}(parcour)++parcour-\/>occurence;}
+\DoxyCodeLine{288         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{290             \mbox{\hyperlink{huff_8c_a48ec7d4cc3b2b07b57e7b0e5093600e6}{default\_append}}(\mbox{\hyperlink{huff_8c_aeb9dea985cafab1c24fa128503e56c8b}{creaCell}}(1, huff), maliste);}
+\DoxyCodeLine{291             ++counter;}
+\DoxyCodeLine{292         \}}
+\DoxyCodeLine{293         ++nb\_liste;}
+\DoxyCodeLine{294         huff = getc(fptr);}
+\DoxyCodeLine{295     \}}
+\DoxyCodeLine{296     fprintf(trad, \textcolor{stringliteral}{"\%zu "}, counter);}
+\DoxyCodeLine{298     \textcolor{keywordflow}{return} maliste;}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300 \}}
+
+\end{DoxyCode}
